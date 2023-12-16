@@ -1,13 +1,18 @@
 [tool.poetry]
-name = "course4"
+name = "kurs4-oop"
 version = "0.1.0"
 description = ""
-authors = ["Mamed Mamedov <demam777@gmail.com>"]
+authors = ["kanlar75 <kanlar75@gmail.com>"]
 readme = "README.md"
+packages = [{include = "kurs4_oop"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 requests = "^2.31.0"
+fake-useragent = "^1.1.3"
+pytest = "^7.4.0"
+coverage = "^7.2.7"
+pytest-cov = "^4.1.0"
 
 
 [build-system]
