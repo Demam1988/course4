@@ -4,7 +4,7 @@ from src.classes import HeadHunterAPI, SuperJobAPI, Vacancy, JSONSaver
 from src.utils import user_work_with_file
 
 
-def main():
+def main() -> object:
     # Создание экземпляра класса для работы с API сайтов с вакансиями
     print('Привет!\n')
     vacancies_hh = HeadHunterAPI()
