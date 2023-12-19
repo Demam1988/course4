@@ -4,6 +4,8 @@ import fake_useragent
 from abc import ABC, abstractmethod
 import os
 
+API_TOKEN_SJ = 'v3.r.13773054.322adb5f53925517e4e5d74ec1b4ac2fc2fb5d21' \
+                   '.643a11cd83b584cd8028edf34a0e6ef951dd8e1e'
 
 # количество страниц для поиска
 pages = 5
@@ -93,8 +95,7 @@ class HeadHunterAPI(FindVacancies):
 
 class SuperJobAPI(FindVacancies):
     """ Класс для работы с вакансиями SuperJob """
-    API_TOKEN_SJ = 'v3.r.13773054.322adb5f53925517e4e5d74ec1b4ac2fc2fb5d21' \
-                   '.643a11cd83b584cd8028edf34a0e6ef951dd8e1e'
+
 
     headers = {"X-Api-App-Id": API_TOKEN_SJ}
     params = {"count": vacancies_on_page}
