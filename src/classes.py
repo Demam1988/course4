@@ -8,7 +8,7 @@ import os
 # количество страниц для поиска
 pages = 5
 # число вакансий на странице
-vacancies_on_page = 100
+vacancies_on_page = 30
 
 
 class FindVacancies(ABC):
